@@ -18,6 +18,7 @@
       margin-top: 2rem;
     }
   </style>
+  <script src="./settings.js"></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
@@ -215,12 +216,23 @@
       <h2 style="color: var(--color-primary); margin-bottom: 1rem;">資料請求ありがとうございます</h2>
       <p style="font-size: 1.1rem; color: #555;">以下のボタンより資料（PDF）をダウンロードしていただけます。<br>また、担当者より順次ご連絡いたします。</p>
       
-      <div style="margin-top: 2rem; margin-bottom: 2rem;">
-        <a href="YOUR_PDF_FILE_URL.pdf" id="downloadBtn" download class="btn btn-cta" style="display: inline-block; width: 100%; max-width: 300px; font-size: 1.2rem;">資料をダウンロードする</a>
+      <div style="margin-top: 2rem; margin-bottom: 1.5rem;">
+        <a href="#" id="downloadBtn" download class="btn btn-cta" style="display: inline-block; width: 100%; max-width: 300px; font-size: 1.2rem;">資料をダウンロードする</a>
+      </div>
+
+      <div style="margin-top: 1.5rem; margin-bottom: 2.5rem; background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center;">
+        <h3 style="color: #E74C3C; margin-bottom: 0.5rem; font-size: 1.2rem;">🎁 特典</h3>
+        <p style="font-size: 1rem; color: #333; margin-bottom: 0.5rem;">
+          ワーカー受け入れマニュアル作成ツールをご利用いただけます。
+        </p>
+        <p style="font-size: 0.9rem; color: #e67e22; margin-bottom: 1rem; font-weight: bold;">
+          ※WEBサイトなので、ブックマーク推奨です。
+        </p>
+        <a href="#" id="bonusBtn" target="_blank" rel="noopener noreferrer" class="btn btn-cta" style="background-color: #4CAF50; border-color: #4CAF50; display: inline-block; width: 100%; max-width: 300px; font-size: 1.1rem; padding: 0.8rem;">マニュアル作成ツールを開く</a>
       </div>
 
       <div style="margin-top: 1rem;">
-        <a href="./index.html" class="btn btn-outline">LPに戻る</a>
+        <a href="./index.html" class="btn btn-outline" style="background-color: #fff; color: var(--color-cta);">元のページに戻る</a>
       </div>
     </div>
 
@@ -295,6 +307,27 @@
         submitBtn.innerText = originalBtnText;
       });
     }
+
+    // 設定ファイルからのリンク読み込み
+    document.addEventListener("DOMContentLoaded", () => {
+      if (typeof SITE_SETTINGS !== 'undefined') {
+        const downloadBtn = document.getElementById('downloadBtn');
+        if (downloadBtn) {
+          downloadBtn.href = SITE_SETTINGS.DOWNLOAD_FILE_URL;
+        }
+        const bonusBtn = document.getElementById('bonusBtn');
+        if (bonusBtn) {
+          bonusBtn.href = SITE_SETTINGS.BONUS_TOOL_URL;
+        }
+      }
+
+      // テスト確認用: URLに ?thanks=1 を付けるとサンクスページを直接表示できます
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('thanks') === '1') {
+        document.getElementById('form-wrapper').style.display = 'none';
+        document.getElementById('thanksMessage').style.display = 'block';
+      }
+    });
   </script>
 </body>
 </html>
