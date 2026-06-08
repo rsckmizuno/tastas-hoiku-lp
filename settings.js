@@ -11,6 +11,9 @@ const SITE_SETTINGS = {
   // 例: "./files/document_v2.pdf" や "https://example.com/shared/document.pdf"
   DOWNLOAD_FILE_URL: "./files/siryou.pdf",
 
-  // ② 特典：ワーカー受け入れマニュアル作成ツールのURL
+  // ② ダウンロード時にお客様のパソコンに保存されるファイル名
+  DOWNLOAD_FILE_NAME: "タスタス保育_サービス資料.pdf",
+
+  // ③ 特典：ワーカー受け入れマニュアル作成ツールのURL
   BONUS_TOOL_URL: "https://tastas-to-worker-manual.pages.dev/"
 };
