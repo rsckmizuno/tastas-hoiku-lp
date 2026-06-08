@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>資料ダウンロード・お問い合わせ | タスタス保育</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Zen Maru Gothic', sans-serif; background-color: #FDFBF4; }
+    .thanks-message {
+      display: none;
+      text-align: center;
+      padding: 4rem 2rem;
+      background: #EAF5F0;
+      border-radius: var(--radius-card);
+      margin-top: 2rem;
+    }
+  </style>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="./index.html" class="header-logo">
+        <img src="./images/logo-horizontal.png" alt="タスタス保育">
+      </a>
+    </div>
+  </header>
+
+  <div class="container contact-container">
+    
+    <div id="form-wrapper">
+      <h1 class="section-title" style="margin-bottom: 1rem;">資料ダウンロード・お問い合わせ</h1>
+      <p style="text-align: center; margin-bottom: 2rem; font-size: 1.1rem;">
+        タスタス保育のサービス資料を無料でお送りします。<br>
+        現在の人材募集状況やご希望の説明方法もあわせてお聞かせください。
+      </p>
+
+      <div style="background: #F7F9F6; border: 2px solid #E74C3C; padding: 2rem; border-radius: 12px; margin-bottom: 2rem; text-align: center;">
+        <h3 style="color: #333; margin-bottom: 1.5rem; font-size: 1.4rem; font-weight: bold;">
+          資料ダウンロードで<span style="color: #E74C3C; font-size: 1.8rem;">2大特典</span>プレゼント
+        </h3>
+        
+        <div style="background: #fff; padding: 1.5rem 2rem; border-radius: 8px; display: inline-block; text-align: left; margin-bottom: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.8rem; color: #E74C3C; font-weight: bold; display: flex; align-items: center; font-size: 1.1rem;">
+              <svg style="width: 20px; height: 20px; margin-right: 8px; flex-shrink: 0;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#E74C3C"/><path d="M7 12L10.5 15.5L18 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              ワーカー受け入れマニュアル作成ツール
+            </li>
+            <li style="color: #E74C3C; font-weight: bold; display: flex; align-items: center; font-size: 1.1rem;">
+              <svg style="width: 20px; height: 20px; margin-right: 8px; flex-shrink: 0;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#E74C3C"/><path d="M7 12L10.5 15.5L18 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              導入初月のサービス利用料無料
+            </li>
+          </ul>
+        </div>
+
+        <p style="color: #555; font-size: 0.95rem; line-height: 1.6; margin: 0;">
+          単発ワーカーの受け入れ準備のためのマニュアルを無料でお渡しします。<br>
+          初めてでも安心してご利用いただけます。<br>
+          また、導入初月はサービス利用料無料でご利用いただけます。
+        </p>
+      </div>
+
+      <form id="contactForm" class="card" onsubmit="submitForm(event)">
+        <div class="form-group">
+          <label for="companyName">法人名 <span class="badge" style="background:#FF7F66; color:#fff; padding: 2px 6px; font-size: 0.7rem;">必須</span></label>
+          <input type="text" id="companyName" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="facilityName">施設名 <span class="badge" style="background:#FF7F66; color:#fff; padding: 2px 6px; font-size: 0.7rem;">必須</span></label>
+          <input type="text" id="facilityName" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contactName">担当者名 <span class="badge" style="background:#FF7F66; color:#fff; padding: 2px 6px; font-size: 0.7rem;">必須</span></label>
+          <input type="text" id="contactName" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">メールアドレス <span class="badge" style="background:#FF7F66; color:#fff; padding: 2px 6px; font-size: 0.7rem;">必須</span></label>
+          <input type="email" id="email" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">電話番号 <span class="badge" style="background:#FF7F66; color:#fff; padding: 2px 6px; font-size: 0.7rem;">必須</span></label>
+          <input type="tel" id="phone" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="pref">都道府県</label>
+          <select id="pref" class="form-control">
+            <option value="">選択してください</option>
+            <option value="北海道">北海道</option>
+            <option value="青森県">青森県</option>
+            <option value="岩手県">岩手県</option>
+            <option value="宮城県">宮城県</option>
+            <option value="秋田県">秋田県</option>
+            <option value="山形県">山形県</option>
+            <option value="福島県">福島県</option>
+            <option value="茨城県">茨城県</option>
+            <option value="栃木県">栃木県</option>
+            <option value="群馬県">群馬県</option>
+            <option value="埼玉県">埼玉県</option>
+            <option value="千葉県">千葉県</option>
+            <option value="東京都">東京都</option>
+            <option value="神奈川県">神奈川県</option>
+            <option value="新潟県">新潟県</option>
+            <option value="富山県">富山県</option>
+            <option value="石川県">石川県</option>
+            <option value="福井県">福井県</option>
+            <option value="山梨県">山梨県</option>
+            <option value="長野県">長野県</option>
+            <option value="岐阜県">岐阜県</option>
+            <option value="静岡県">静岡県</option>
+            <option value="愛知県">愛知県</option>
+            <option value="三重県">三重県</option>
+            <option value="滋賀県">滋賀県</option>
+            <option value="京都府">京都府</option>
+            <option value="大阪府">大阪府</option>
+            <option value="兵庫県">兵庫県</option>
+            <option value="奈良県">奈良県</option>
+            <option value="和歌山県">和歌山県</option>
+            <option value="鳥取県">鳥取県</option>
+            <option value="島根県">島根県</option>
+            <option value="岡山県">岡山県</option>
+            <option value="広島県">広島県</option>
+            <option value="山口県">山口県</option>
+            <option value="徳島県">徳島県</option>
+            <option value="香川県">香川県</option>
+            <option value="愛媛県">愛媛県</option>
+            <option value="高知県">高知県</option>
+            <option value="福岡県">福岡県</option>
+            <option value="佐賀県">佐賀県</option>
+            <option value="長崎県">長崎県</option>
+            <option value="熊本県">熊本県</option>
+            <option value="大分県">大分県</option>
+            <option value="宮崎県">宮崎県</option>
+            <option value="鹿児島県">鹿児島県</option>
+            <option value="沖縄県">沖縄県</option>
+            <option value="その他">その他</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>募集したい職種（複数選択可）</label>
+          <div class="checkbox-group">
+            <label class="checkbox-label"><input type="checkbox" name="job" value="保育士"> 保育士</label>
+            <label class="checkbox-label"><input type="checkbox" name="job" value="幼稚園教諭"> 幼稚園教諭</label>
+            <label class="checkbox-label"><input type="checkbox" name="job" value="保育補助"> 保育補助</label>
+            <label class="checkbox-label"><input type="checkbox" name="job" value="その他"> その他</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>現在利用している採用手段（複数選択可）</label>
+          <div class="checkbox-group">
+            <label class="checkbox-label"><input type="checkbox" name="method" value="求人媒体"> 求人媒体</label>
+            <label class="checkbox-label"><input type="checkbox" name="method" value="人材紹介"> 人材紹介</label>
+            <label class="checkbox-label"><input type="checkbox" name="method" value="派遣"> 派遣</label>
+            <label class="checkbox-label"><input type="checkbox" name="method" value="ハローワーク"> ハローワーク</label>
+            <label class="checkbox-label"><input type="checkbox" name="method" value="知人紹介"> 知人紹介</label>
+            <label class="checkbox-label"><input type="checkbox" name="method" value="単発サービス"> 単発サービス</label>
+            <label class="checkbox-label"><input type="checkbox" name="method" value="利用なし"> 利用なし</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>現在の人材募集状況</label>
+          <div class="radio-group">
+            <label class="radio-label"><input type="radio" name="status" value="すぐに人手がほしい" required> すぐに人手がほしい</label>
+            <label class="radio-label"><input type="radio" name="status" value="1〜3か月以内に検討したい"> 1〜3か月以内に検討したい</label>
+            <label class="radio-label"><input type="radio" name="status" value="情報収集中"> 情報収集中</label>
+            <label class="radio-label"><input type="radio" name="status" value="まだ具体的には決まっていない"> まだ具体的には決まっていない</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>希望する説明方法</label>
+          <div class="radio-group">
+            <label class="radio-label"><input type="radio" name="explain" value="電話で説明を聞きたい" required> 電話で説明を聞きたい</label>
+            <label class="radio-label"><input type="radio" name="explain" value="オンラインで説明を聞きたい"> オンラインで説明を聞きたい</label>
+            <label class="radio-label"><input type="radio" name="explain" value="訪問説明を希望"> 訪問説明を希望</label>
+            <label class="radio-label"><input type="radio" name="explain" value="まずは資料だけ見たい"> まずは資料だけ見たい</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">お問い合わせ内容</label>
+          <textarea id="message" class="form-control" placeholder="ご質問やご要望があればご記入ください"></textarea>
+        </div>
+
+        <div class="form-group" style="text-align: center; margin-top: 2rem; margin-bottom: 1.5rem;">
+          <label style="cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font-size: 1rem;">
+            <input type="checkbox" id="privacyPolicy" required style="transform: scale(1.2); margin-right: 0.5rem;">
+            <span><a href="https://tastas.work/privacy" target="_blank" rel="noopener noreferrer" style="color: #007BFF; text-decoration: underline;">プライバシーポリシー</a>に同意する</span>
+            <span class="badge" style="background:#FF7F66; color:#fff; padding: 2px 6px; font-size: 0.7rem; margin-left: 0.5rem;">必須</span>
+          </label>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 2rem;">
+          <div class="g-recaptcha" data-sitekey="6LeZkRMtAAAAAEX5M1qr88Nhw3F0iISABfvJiaVz"></div>
+        </div>
+
+        <div style="text-align: center;">
+          <button type="submit" class="btn btn-cta" style="width: 100%; max-width: 300px; font-size: 1.2rem;">資料をダウンロード</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- サンクスメッセージ -->
+    <div id="thanksMessage" class="thanks-message">
+      <h2 style="color: var(--color-primary); margin-bottom: 1rem;">資料請求ありがとうございます</h2>
+      <p style="font-size: 1.1rem; color: #555;">以下のボタンより資料（PDF）をダウンロードしていただけます。<br>また、担当者より順次ご連絡いたします。</p>
+      
+      <div style="margin-top: 2rem; margin-bottom: 2rem;">
+        <a href="YOUR_PDF_FILE_URL.pdf" id="downloadBtn" download class="btn btn-cta" style="display: inline-block; width: 100%; max-width: 300px; font-size: 1.2rem;">資料をダウンロードする</a>
+      </div>
+
+      <div style="margin-top: 1rem;">
+        <a href="./index.html" class="btn btn-outline">LPに戻る</a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script>
+    const GAS_URL = "https://script.google.com/macros/s/AKfycbxubBv9mngW4ipQis48QJwrIznhT3P3_FC87bJx8VkZXy_4lEuoS8jSyr-g1T76w1yypg/exec";
+
+    function submitForm(event) {
+      event.preventDefault();
+
+      const recaptchaResponse = grecaptcha.getResponse();
+      if (!recaptchaResponse) {
+        alert('「私はロボットではありません」にチェックを入れてください。');
+        return;
+      }
+
+      // 送信ボタンを無効化して「送信中...」に変更
+      const submitBtn = event.target.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.innerText;
+      submitBtn.disabled = true;
+      submitBtn.innerText = '送信中...';
+
+      // フォームデータの収集
+      const formData = new FormData();
+      formData.append('companyName', document.getElementById('companyName').value);
+      formData.append('facilityName', document.getElementById('facilityName').value);
+      formData.append('contactName', document.getElementById('contactName').value);
+      formData.append('email', document.getElementById('email').value);
+      formData.append('phone', document.getElementById('phone').value);
+      formData.append('pref', document.getElementById('pref').value);
+
+      // チェックボックスの収集
+      const jobs = Array.from(document.querySelectorAll('input[name="job"]:checked')).map(el => el.value);
+      formData.append('job', jobs.join(', '));
+      const methods = Array.from(document.querySelectorAll('input[name="method"]:checked')).map(el => el.value);
+      formData.append('method', methods.join(', '));
+
+      // ラジオボタンの収集
+      const status = document.querySelector('input[name="status"]:checked')?.value || '';
+      formData.append('status', status);
+      const explain = document.querySelector('input[name="explain"]:checked')?.value || '';
+      formData.append('explain', explain);
+
+      formData.append('message', document.getElementById('message').value);
+      formData.append('recaptchaResponse', recaptchaResponse);
+
+      // GASへ送信
+      fetch(GAS_URL, {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.status === 'success') {
+          // 成功時
+          document.getElementById('form-wrapper').style.display = 'none';
+          document.getElementById('thanksMessage').style.display = 'block';
+          window.scrollTo(0, 0);
+        } else {
+          // エラー時
+          alert('エラーが発生しました: ' + (data.message || 'もう一度お試しください'));
+          submitBtn.disabled = false;
+          submitBtn.innerText = originalBtnText;
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('通信エラーが発生しました。時間を置いて再度お試しください。');
+        submitBtn.disabled = false;
+        submitBtn.innerText = originalBtnText;
+      });
+    }
+  </script>
+</body>
+</html>

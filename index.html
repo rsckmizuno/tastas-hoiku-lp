@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>タスタス保育 | 保育士・幼児教育者の単発・短期人材マッチング</title>
+  <meta name="description" content="保育現場の「あと少し人手がほしい」に。タスタス保育は、保育士・幼児教育者の単発・短期人材マッチングサービスです。">
+  <link rel="stylesheet" href="./styles.css?v=4">
+  <!-- Google Fonts for better typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Zen Maru Gothic', sans-serif; }
+  </style>
+</head>
+<body>
+
+  <!-- 1. ヘッダー -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="header-logo">
+        <img src="./images/logo-horizontal.png" alt="タスタス保育">
+      </a>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#about">特徴</a></li>
+          <li><a href="#usage">活用シーン</a></li>
+          <li><a href="#voices">ご利用者様の声</a></li>
+          <li><a href="./simulation.html">料金シミュレーション</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li>
+            <a href="./contact.html" class="btn btn-cta header-cta" style="color: #FFF;">資料をダウンロード</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 2. ファーストビュー -->
+  <section class="hero">
+    <!-- 装飾イラスト -->
+    <div class="hero-decorations">
+      <!-- 丸いドット -->
+      <div class="decor decor-dot" style="top: 15%; left: 8%; width: 80px; height: 80px; background-color: #FFD166;"></div>
+      <div class="decor decor-dot" style="top: 65%; left: 3%; width: 40px; height: 40px; background-color: #85C1A1;"></div>
+      <div class="decor decor-dot" style="top: 20%; right: 10%; width: 100px; height: 100px; background-color: #FF7F66; opacity: 0.8;"></div>
+      <div class="decor decor-dot" style="top: 75%; right: 8%; width: 60px; height: 60px; background-color: #a8d5be;"></div>
+      
+      <!-- 雲 -->
+      <svg class="decor decor-cloud" style="top: 10%; left: 20%; width: 120px;" viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20,40 a15,15 0 0,1 0,-30 a20,20 0 0,1 35,-10 a25,25 0 0,1 25,25 a15,15 0 0,1 0,30 z" fill="#FFFFFF" opacity="0.9"/>
+      </svg>
+      <svg class="decor decor-cloud" style="top: 70%; right: 20%; width: 150px;" viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20,40 a15,15 0 0,1 0,-30 a20,20 0 0,1 35,-10 a25,25 0 0,1 25,25 a15,15 0 0,1 0,30 z" fill="#FFFFFF" opacity="0.9"/>
+      </svg>
+      
+      <!-- 星 -->
+      <svg class="decor decor-star" style="top: 40%; left: 6%; width: 45px;" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="50,10 61,39 92,39 67,58 76,87 50,70 24,87 33,58 8,39 39,39" fill="#FFED99"/>
+      </svg>
+      <svg class="decor decor-star" style="top: 15%; right: 30%; width: 35px;" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="50,10 61,39 92,39 67,58 76,87 50,70 24,87 33,58 8,39 39,39" fill="#FFED99"/>
+      </svg>
+
+      <!-- 鳥（シンプルな形） -->
+      <svg class="decor decor-bird" style="top: 30%; right: 6%; width: 50px;" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10,25 Q25,10 50,25 Q75,10 90,25 Q75,20 50,35 Q25,20 10,25 Z" fill="#85C1A1"/>
+      </svg>
+    </div>
+
+    <!-- 背景スライドショー -->
+    <div class="hero-slideshow-wrapper">
+      <div class="hero-slideshow">
+        <div class="slide" style="background-image: url('./images/slide_1_playing_1780890162409.png');"></div>
+        <div class="slide" style="background-image: url('./images/slide_2_reading_1780890175315.png');"></div>
+        <div class="slide" style="background-image: url('./images/slide_3_crafts_1780890188340.png');"></div>
+        <div class="slide" style="background-image: url('./images/slide_4_park_1780890202206.png');"></div>
+        <div class="slide" style="background-image: url('./images/slide_5_baby_1780890215886.png');"></div>
+        <div class="hero-overlay"></div>
+      </div>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span>保育の人手不足に、</span><br>
+          <span>新しい<span style="color: #38a18c;">“たすけあい”</span>を。</span>
+        </h1>
+        <div class="hero-text-new">
+          <div class="hero-pill">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#38a18c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="8.5" cy="7" r="4"></circle>
+              <path d="M22 21v-2a3 3 0 0 0-3-3h-2"></path>
+              <circle cx="17" cy="10" r="3"></circle>
+              <!-- Heart -->
+              <path d="M14 6l1.5-1.5a2.12 2.12 0 0 1 3 0l.5.5.5-.5a2.12 2.12 0 0 1 3 0l1.5 1.5L19 11z" fill="#FFED99" stroke="none"></path>
+            </svg>
+            <span>保育士・幼児教育者専門マッチングサービス</span>
+          </div>
+          
+          <div class="hero-free-wrapper">
+            <div class="hero-free-box">
+              <div class="hero-free-list">
+                <div class="hero-free-item">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#38a18c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 11 15 16 9"></polyline></svg>
+                  初期費用
+                </div>
+                <div class="hero-free-divider"></div>
+                <div class="hero-free-item">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#38a18c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 11 15 16 9"></polyline></svg>
+                  掲載費用
+                </div>
+                <div class="hero-free-divider"></div>
+                <div class="hero-free-item">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#38a18c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 11 15 16 9"></polyline></svg>
+                  引き抜き費用
+                </div>
+              </div>
+            </div>
+            <div class="hero-free-ribbon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#FFED99" stroke="none">
+                <path d="M12 2L13.5 8.5L20 10L13.5 11.5L12 18L10.5 11.5L4 10L10.5 8.5L12 2Z"/>
+                <path d="M6 14L6.5 16.5L9 17L6.5 17.5L6 20L5.5 17.5L3 17L5.5 16.5L6 14Z"/>
+              </svg>
+              すべて無料
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. お悩みセクション -->
+  <section class="section has-divider asy-wave-cream-top" id="trouble" style="background-color: var(--color-bg); position: relative;">
+    <div class="container">
+      <div class="section-subtitle-en">
+        <span>T</span><span>r</span><span>o</span><span>u</span><span>b</span><span>l</span><span>e</span>
+      </div>
+      <h2 class="section-title" style="margin-bottom: 2rem; color: #2c3e50;">
+        今、あなたの職場で<br>
+        <span style="color: #38a18c; font-size: 2.8rem; font-weight: bold;">こんな悩み</span> はありませんか？
+      </h2>
+      <div class="trouble-grid" style="margin-bottom: 3rem;">
+        <div class="trouble-card">
+          <div class="trouble-icon" style="background-color: #e8f4ec; border-radius: 50%; color: #38a18c; font-size: 1.8rem; font-weight: bold; border: 2px dashed #b5dbcc;">
+            ！
+          </div>
+          <div class="trouble-text">急な欠勤で<br>シフトが埋まらない</div>
+        </div>
+        <div class="trouble-card">
+          <div class="trouble-icon" style="background-color: #e8f4ec; border-radius: 50%; color: #38a18c; font-size: 1.8rem; font-weight: bold; border: 2px dashed #b5dbcc;">
+            ！
+          </div>
+          <div class="trouble-text">行事前だけ<br>人手が足りない</div>
+        </div>
+        <div class="trouble-card">
+          <div class="trouble-icon" style="background-color: #e8f4ec; border-radius: 50%; color: #38a18c; font-size: 1.8rem; font-weight: bold; border: 2px dashed #b5dbcc;">
+            ！
+          </div>
+          <div class="trouble-text">早番・遅番の<br>短時間だけ補助がほしい</div>
+        </div>
+        <div class="trouble-card">
+          <div class="trouble-icon" style="background-color: #e8f4ec; border-radius: 50%; color: #38a18c; font-size: 1.8rem; font-weight: bold; border: 2px dashed #b5dbcc;">
+            ！
+          </div>
+          <div class="trouble-text">求人を出しても<br>応募が来ない</div>
+        </div>
+        <div class="trouble-card">
+          <div class="trouble-icon" style="background-color: #e8f4ec; border-radius: 50%; color: #38a18c; font-size: 1.8rem; font-weight: bold; border: 2px dashed #b5dbcc;">
+            ！
+          </div>
+          <div class="trouble-text">派遣や紹介は<br>費用が高い</div>
+        </div>
+        <div class="trouble-card">
+          <div class="trouble-icon" style="background-color: #e8f4ec; border-radius: 50%; color: #38a18c; font-size: 1.8rem; font-weight: bold; border: 2px dashed #b5dbcc;">
+            ！
+          </div>
+          <div class="trouble-text">採用後の定着に<br>不安がある</div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <h2 style="font-size: 2.4rem; color: #2c3e50; font-weight: bold; margin-bottom: 2rem;">その悩み、<span style="color: #38a18c;">タスタス</span>が解決します！</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. タスタス保育とは？セクション -->
+  <section class="section about-section" id="about" style="padding-bottom: 2rem;">
+    <div class="container">
+      <div class="about-title-wrapper">
+        <div class="section-subtitle-en">
+          <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span>
+        </div>
+        <h2 class="about-title">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38a18c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: rotate(-15deg);"><line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line></svg>
+          タスタス保育とは？
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38a18c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: rotate(15deg);"><line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line></svg>
+        </h2>
+        <p class="about-subtitle">保育施設と、保育士・幼児教育者をつなぐ、やさしく始めやすいマッチングサービスです。</p>
+      </div>
+
+      <div class="about-cards">
+        <div class="about-card">
+          <div class="about-card-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#38a18c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line><circle cx="16" cy="16" r="4" fill="#fff"></circle><polyline points="16 14 16 16 17 17"></polyline></svg>
+          </div>
+          <h3 class="about-card-title">必要なときだけ頼める</h3>
+          <div class="about-card-divider"></div>
+          <p class="about-card-text">急な欠勤や行事前・早番遅番など<br>必要な場面に合わせて<br>いつでも柔軟に依頼できます。</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#38a18c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M9 14h2"></path><path d="M9 10h2"></path><path d="M14 10l2 2 4-4"></path><path d="M14 14l2 2 4-4"></path></svg>
+          </div>
+          <h3 class="about-card-title">条件通りの人材がマッチング</h3>
+          <div class="about-card-divider"></div>
+          <p class="about-card-text">求人の条件に合った人材が<br>自動でマッチングします。<br>採用の手間は一切かかりません。</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#38a18c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path><path d="M12 11l1.5-1.5a2.12 2.12 0 0 1 3 0l.5.5.5-.5a2.12 2.12 0 0 1 3 0l1.5 1.5L17 16z" fill="#FFF"></path></svg>
+          </div>
+          <h3 class="about-card-title">長期雇用も可能</h3>
+          <div class="about-card-divider"></div>
+          <p class="about-card-text">相性が良ければ、長期的な<br>雇用もご検討いただけます。</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- 9. 料金案内セクション -->
+  <section class="section" id="pricing" style="padding-top: 2rem;">
+    <div class="container">
+      <div class="section-subtitle-en">
+        <span>P</span><span>r</span><span>i</span><span>c</span><span>e</span>
+      </div>
+      <h2 class="section-title">タスタスは3つの無料で安心スタート</h2>
+      
+      <div class="free-banner">
+        就業した分だけの<span class="text-red">完全成果報酬型</span>なのでコストリスクなし
+      </div>
+
+      <div class="free-cards">
+        <div class="free-card">
+          <div class="free-num">01</div>
+          <h3 class="free-title">初期費用</h3>
+          <div class="free-price"><span>0</span><span class="yen">円</span></div>
+          <p class="free-desc">最短お申込み当日に<br>アカウント発行可能</p>
+        </div>
+        <div class="free-card">
+          <div class="free-num">02</div>
+          <h3 class="free-title">掲載費用</h3>
+          <div class="free-price"><span>0</span><span class="yen">円</span></div>
+          <p class="free-desc">アドバイザーが求人掲載を<br>サポートいたします</p>
+        </div>
+        <div class="free-card">
+          <div class="free-num">03</div>
+          <h3 class="free-title">引き抜き費用</h3>
+          <div class="free-price"><span>0</span><span class="yen">円</span></div>
+          <p class="free-desc">相性のよいワーカーさんへ<br>どんどんお声かけください</p>
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 3rem;">
+        <p style="margin-bottom: 1.5rem; font-weight: bold; font-size: 1.1rem;">実際に稼働が発生した分だけ、サービス利用料が発生します。</p>
+        <a href="./simulation.html" class="btn btn-outline">料金シミュレーションを見る</a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- 6. 選ばれる3つの理由 -->
+  <section class="section bg-white has-divider curve-white-top" id="features">
+    <div class="container">
+      <div class="section-subtitle-en">
+        <span>R</span><span>e</span><span>a</span><span>s</span><span>o</span><span>n</span>
+      </div>
+      <h2 class="section-title">タスタス保育が選ばれる3つの理由</h2>
+      <div class="reasons-grid">
+        <div class="card reason-card">
+          <div class="reason-num">01</div>
+          <h3 class="reason-title">保育・幼児教育に特化</h3>
+          <p>保育士・幼児教育者など、保育施設で必要とされる人材を中心に案内します。</p>
+        </div>
+        <div class="card reason-card">
+          <div class="reason-num">02</div>
+          <h3 class="reason-title">短時間・単発求人OK</h3>
+          <p>行事前、土曜保育、早番・遅番、急な欠員など、必要なタイミングで活用できます。</p>
+        </div>
+        <div class="card reason-card">
+          <div class="reason-num">03</div>
+          <h3 class="reason-title">担当者がサポート</h3>
+          <p>求人内容のご相談からマッチング前後のフォローまで伴走するので、初めてでも安心です。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. 活用シーンセクション -->
+  <section class="section has-divider" id="usage" style="background-color: #F4F9F4;">
+    <!-- Wave Transition -->
+    <div style="position: absolute; top: -60px; left: 0; width: 100%; overflow: hidden; line-height: 0; z-index: 0;">
+        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display: block; width: 100%; height: 60px;">
+            <path d="M0,80 C320,0 420,80 720,40 C1020,0 1200,60 1440,40 L1440,80 L0,80 Z" fill="#F4F9F4"></path>
+        </svg>
+    </div>
+    <div class="container" style="position: relative; z-index: 1;">
+      <!-- Title Area -->
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <div class="section-subtitle-en">
+          <span>S</span><span>C</span><span>E</span><span>N</span><span>E</span>
+        </div>
+        <h2 style="font-size: 2.4rem; color: #1a2a3a; font-weight: bold; margin-bottom: 1rem;">こんな場面で活用できます</h2>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 0.8rem;">
+          <div style="width: 60px; border-top: 2px dashed #85C1A1;"></div>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#85C1A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L15 8L22 9L17 14L18 21L12 18L6 21L7 14L2 9L9 8Z" stroke="none" fill="#85C1A1"/>
+          </svg>
+          <div style="width: 60px; border-top: 2px dashed #85C1A1;"></div>
+        </div>
+      </div>
+
+      <!-- Cards Grid -->
+      <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 1rem; align-items: center;">
+        <!-- Top Row -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; width: 100%;">
+          <div class="usage-card-new">
+            <div style="width: 76px; height: 76px; border-radius: 50%; overflow: hidden; margin: 0 auto 1rem; position: relative; background-color: #e8f4ec;">
+              <img src="./images/usage_cards_top.png" style="position: absolute; width: 1047px; max-width: none; left: -96px; top: -20px;">
+            </div>
+            <div class="usage-card-text" style="font-size: 0.95rem; font-weight: bold; color: #333;">運動会・発表会前の準備</div>
+          </div>
+          <div class="usage-card-new">
+            <img src="./images/usage_icon_doyou_new.png" alt="土曜保育の人員補助" style="width: 76px; height: 76px; border-radius: 50%; margin: 0 auto 1rem; display: block; object-fit: cover;">
+            <div class="usage-card-text" style="font-size: 0.95rem; font-weight: bold; color: #333;">土曜保育の人員補助</div>
+          </div>
+          <div class="usage-card-new">
+            <img src="./images/usage_icon_hayaban.png" alt="早番・遅番の短時間補助" style="width: 76px; height: 76px; border-radius: 50%; margin: 0 auto 1rem; display: block; object-fit: cover;">
+            <div class="usage-card-text" style="font-size: 0.95rem; font-weight: bold; color: #333;">早番・遅番の短時間補助</div>
+          </div>
+          <div class="usage-card-new">
+            <img src="./images/usage_icon_osanpo.png" alt="お散歩・外遊び時の見守り補助" style="width: 76px; height: 76px; border-radius: 50%; margin: 0 auto 1rem; display: block; object-fit: cover;">
+            <div class="usage-card-text" style="font-size: 0.95rem; font-weight: bold; color: #333;">お散歩・外遊び時の見守り補助</div>
+          </div>
+        </div>
+        <!-- Bottom Row -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; width: 100%;">
+          <div class="usage-card-new">
+            <img src="./images/usage_icon_seisaku_new.png" alt="制作準備・環境整備" style="width: 76px; height: 76px; border-radius: 50%; margin: 0 auto 1rem; display: block; object-fit: cover;">
+            <div class="usage-card-text" style="font-size: 0.95rem; font-weight: bold; color: #333;">制作準備・環境整備</div>
+          </div>
+          <div class="usage-card-new">
+            <img src="./images/usage_icon_kekkin2.png" alt="急な欠勤時の代替人員" style="height: 76px; margin: 0 auto 1rem; display: block; object-fit: contain;">
+            <div class="usage-card-text" style="font-size: 0.95rem; font-weight: bold; color: #333;">急な欠勤時の代替人員</div>
+          </div>
+          <div class="usage-card-new">
+            <img src="./images/usage_icon_chouki.png" alt="長期雇用前のお試し稼働" style="width: 76px; height: 76px; border-radius: 50%; margin: 0 auto 1rem; display: block; object-fit: cover;">
+            <div class="usage-card-text" style="font-size: 0.95rem; font-weight: bold; color: #333;">長期雇用前のお試し稼働</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Illustration Row -->
+      <div style="text-align: center; margin-top: 0; margin-bottom: -1rem; position: relative; z-index: 0; display: flex; justify-content: center;">
+        <img src="./images/usage_illustrations_row.png" alt="活用シーンイラスト" style="width: 100%; max-width: 1100px; height: auto; object-fit: contain;">
+      </div>
+
+      <!-- Footer Pill -->
+      <div style="display: flex; justify-content: center; position: relative; z-index: 2; margin-top: -2.5rem; margin-bottom: 2rem;">
+        <div style="background-color: #FFF; border-radius: 999px; padding: 1rem 2.5rem; box-shadow: 0 4px 16px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 0.8rem; border: 1px solid rgba(133, 193, 161, 0.2);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#85C1A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22C12 22 4 16 4 10C4 6 7 3 11 3C11.5 3 12 3.2 12 3.2C12 3.2 12.5 3 13 3C17 3 20 6 20 10C20 16 12 22 12 22Z" fill="#E4F0E8" stroke="none" />
+            <path d="M12 22V12M12 12L9 9M12 15L15 12" stroke="#85C1A1" />
+          </svg>
+          <span style="font-weight: bold; color: #1a2a3a; font-size: 1rem;">
+            タスタス保育なら、<span style="color: #38a18c;">必要な時間・必要な場面</span>で頼れるサポートが見つかります。
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 10. 利用の流れセクション -->
+  <section class="section" id="flow" style="position: relative; overflow: hidden; padding: 6rem 0; background-color: #FDFBF4;">
+    <!-- かわいい背景用SVG -->
+    <div class="cute-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none;">
+      <svg width="100%" height="100%" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" style="position: absolute; bottom: 0; left: 0;">
+        <defs>
+          <!-- 斜めストライプパターン -->
+          <pattern id="stripes" width="60" height="100" patternUnits="userSpaceOnUse" patternTransform="rotate(25)">
+            <line x1="0" y1="0" x2="0" y2="100" stroke="#FFF" stroke-width="4" stroke-linecap="round" stroke-dasharray="20, 15" opacity="0.6"/>
+            <line x1="0" y1="0" x2="0" y2="100" stroke="#FFF" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+          </pattern>
+        </defs>
+        
+        <!-- 背景色 -->
+        <rect width="100%" height="100%" fill="#FCFAF2" />
+        
+        <!-- 木々 -->
+        <g fill="#E4EBD1">
+          <!-- もこもこ木 -->
+          <g transform="translate(150, 320) scale(1.2)"><path d="M25,10 C40,5 50,15 55,25 C65,30 65,45 55,55 C60,65 50,75 35,75 C20,75 10,65 15,55 C5,45 5,30 15,25 C20,15 10,5 25,10 Z"/><rect x="32" y="75" width="6" height="15" fill="#E4EBD1"/></g>
+          <!-- とんがり木 -->
+          <g transform="translate(300, 300) scale(1.1)"><path d="M35,10 L45,30 L40,30 L55,55 L45,55 L65,80 L5,80 L25,55 L15,55 L30,30 L25,30 Z"/><rect x="32" y="80" width="6" height="15" fill="#E4EBD1"/></g>
+          <!-- 丸い木 -->
+          <g transform="translate(480, 340)"><path d="M35,10 C55,10 65,30 55,50 C65,60 60,80 35,80 C10,80 5,60 15,50 C5,30 15,10 35,10 Z"/><rect x="32" y="80" width="6" height="15" fill="#E4EBD1"/></g>
+          <!-- もこもこ木 -->
+          <g transform="translate(650, 310) scale(1.3)"><path d="M25,10 C40,5 50,15 55,25 C65,30 65,45 55,55 C60,65 50,75 35,75 C20,75 10,65 15,55 C5,45 5,30 15,25 C20,15 10,5 25,10 Z"/><rect x="32" y="75" width="6" height="15" fill="#E4EBD1"/></g>
+          <!-- とんがり木 -->
+          <g transform="translate(850, 330) scale(0.9)"><path d="M35,10 L45,30 L40,30 L55,55 L45,55 L65,80 L5,80 L25,55 L15,55 L30,30 L25,30 Z"/><rect x="32" y="80" width="6" height="15" fill="#E4EBD1"/></g>
+          <!-- 丸い木 -->
+          <g transform="translate(1000, 300) scale(1.2)"><path d="M35,10 C55,10 65,30 55,50 C65,60 60,80 35,80 C10,80 5,60 15,50 C5,30 15,10 35,10 Z"/><rect x="32" y="80" width="6" height="15" fill="#E4EBD1"/></g>
+          <!-- もこもこ木 -->
+          <g transform="translate(1200, 330)"><path d="M25,10 C40,5 50,15 55,25 C65,30 65,45 55,55 C60,65 50,75 35,75 C20,75 10,65 15,55 C5,45 5,30 15,25 C20,15 10,5 25,10 Z"/><rect x="32" y="75" width="6" height="15" fill="#E4EBD1"/></g>
+          <!-- とんがり木 -->
+          <g transform="translate(1350, 310) scale(1.1)"><path d="M35,10 L45,30 L40,30 L55,55 L45,55 L65,80 L5,80 L25,55 L15,55 L30,30 L25,30 Z"/><rect x="32" y="80" width="6" height="15" fill="#E4EBD1"/></g>
+        </g>
+        
+        <!-- 丘の地形 -->
+        <path d="M0,400 Q360,370 720,420 T1440,380 L1440,800 L0,800 Z" fill="#EBF0E1" />
+        <path d="M0,400 Q360,370 720,420 T1440,380 L1440,800 L0,800 Z" fill="url(#stripes)" />
+      </svg>
+    </div>
+
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="section-subtitle-en">
+        <span>F</span><span>l</span><span>o</span><span>w</span>
+      </div>
+      <h2 class="section-title" style="color: #5C5446; font-size: 2.2rem; margin-bottom: 4rem;">ご利用の流れ</h2>
+      <div class="flow-list">
+        <div class="flow-item">
+          <div class="flow-num">1</div>
+          <div class="flow-text">資料ダウンロード請求・お問い合わせ</div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-num">2</div>
+          <div class="flow-text">担当者よりサービス説明</div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-num">3</div>
+          <div class="flow-text">求人内容・必要な人材条件をヒアリング</div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-num">4</div>
+          <div class="flow-text">求人を掲載</div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-num">5</div>
+          <div class="flow-text">マッチング成立・勤務開始</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. ご利用者様の声セクション -->
+  <section class="section bg-white has-divider wave-white-top" id="voices" style="position: relative; overflow: hidden; padding: 6rem 0;">
+    <!-- かわいい手描き風ドット背景 -->
+    <div class="cute-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none;">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="handdrawn-dots" x="0" y="0" width="140" height="140" patternUnits="userSpaceOnUse">
+            <path d="M35,25 C45,23 47,33 43,40 C37,47 27,43 25,35 C23,25 30,27 35,25 Z" fill="#E4EBD1" opacity="0.7"/>
+            <path d="M105,95 C115,93 117,103 113,110 C107,117 97,113 95,105 C93,95 100,97 105,95 Z" fill="#E4EBD1" opacity="0.7"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#handdrawn-dots)" />
+      </svg>
+    </div>
+
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="section-subtitle-en">
+        <span>V</span><span>o</span><span>i</span><span>c</span><span>e</span>
+      </div>
+      <h2 class="section-title">ご利用者様の声</h2>
+      <div class="voices-grid">
+        <div class="card voice-card">
+          <div class="voice-header">
+            <div class="voice-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#38a18c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <div>
+              <h3 class="voice-name">A保育園 園長</h3>
+              <p class="voice-meta">利用シーン：行事前の準備補助</p>
+            </div>
+          </div>
+          <p class="voice-text">「運動会前の忙しい時期に、短時間だけサポートに入っていただけて本当に助かりました。事前に求人情報を丁寧にヒアリングしていただけたおかげで、条件通りの保育士さんに来ていただけました。」</p>
+        </div>
+        <div class="card voice-card">
+          <div class="voice-header">
+            <div class="voice-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#38a18c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <div>
+              <h3 class="voice-name">Bこども園 主任</h3>
+              <p class="voice-meta">利用シーン：急な欠員対応</p>
+            </div>
+          </div>
+          <p class="voice-text">「職員の急な体調不良で困っていたところ、求人掲載当日にマッチングし、すぐに勤務にきてくれました。派遣や紹介に比べて、スピード感があるので、いざという時のお守り代わりとして心強いです。」</p>
+        </div>
+        <div class="card voice-card">
+          <div class="voice-header">
+            <div class="voice-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#38a18c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <div>
+              <h3 class="voice-name">C幼稚園 園長</h3>
+              <p class="voice-meta">利用シーン：早番・遅番の補助</p>
+            </div>
+          </div>
+          <p class="voice-text">「朝夕の忙しい時間帯だけ、経験豊富な方にサポートしていただけるようになり、正職員の負担が大きく減りました。必要な時間だけピンポイントで依頼できるのがとても便利です。」</p>
+        </div>
+        <div class="card voice-card">
+          <div class="voice-header">
+            <div class="voice-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#38a18c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <div>
+              <h3 class="voice-name">D保育園 主任</h3>
+              <p class="voice-meta">利用シーン：土曜保育の人員補助</p>
+            </div>
+          </div>
+          <p class="voice-text">「土曜保育のシフト調整に毎回苦労していましたが、タスタス保育さんにお願いしてからスムーズに人が確保できるようになりました。単発でも丁寧に対応してくれる方が多くリピーターになってくれている方もいるので、大変助かっています。」</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. FAQセクション -->
+  <section class="section has-divider asy-wave-cream-top" id="faq">
+    <div class="container">
+      <div class="section-subtitle-en">
+        <span>F</span><span>A</span><span>Q</span>
+      </div>
+      <h2 class="section-title">よくあるご質問</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-q">まだ求人内容が固まっていなくても相談できますか？</summary>
+          <div class="faq-a">はい。必要な曜日・時間帯・業務内容から一緒に整理できます。</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">短時間だけでも依頼できますか？</summary>
+          <div class="faq-a">はい。早番・遅番・土曜保育・行事前など、短時間ニーズもご相談ください。</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">どのような職種に対応していますか？</summary>
+          <div class="faq-a">保育士・幼児教育者など、各保育施設で必要とされる人材を中心に対応しております。</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">引き抜き費用はかかりますか？</summary>
+          <div class="faq-a">タスタス保育では、引き抜き費用はいただいておりません。よりよい人材に出会っていただきたいため、求人の掲載費も月額の固定費も一切かかりません。</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">料金は事前に確認できますか？</summary>
+          <div class="faq-a">はい。<a href="./simulation.html">料金シミュレーションページ</a>で概算費用を確認できます。</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">登録や利用開始までにどのくらい日数がかかりますか？</summary>
+          <div class="faq-a">最短で即日〜数日でご案内可能です。施設の状況に合わせてスピーディーに対応いたします。</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">ワーカーさんの事前の面接・顔合わせは可能ですか？</summary>
+          <div class="faq-a">基本的には事前の面接なしでスピーディーにマッチングすることで、必要なタイミングで必要な人材の確保ができるサービスです。最短1時間の求人から掲載可能なので、そのお時間の一部で面接を実施していただき、その後の長期的な就業につなげていただくことも可能です。</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">対応しているエリアはどこですか？</summary>
+          <div class="faq-a">現在は横浜市を中心にサービスを展開しております。神奈川県のその他エリアを含む首都圏エリアにも順次拡大予定ですので、まずはお気軽にお問い合わせください。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. 最終CTAセクション & フッター -->
+  <section class="section bg-accent has-divider curve-accent-top" style="padding-top: 3rem; padding-bottom: 2rem;">
+    <div class="container" style="text-align: center;">
+      <div class="section-subtitle-en" style="margin-bottom: 0.5rem;">
+        <span>M</span><span>e</span><span>s</span><span>s</span><span>a</span><span>g</span><span>e</span>
+      </div>
+      <h2 class="section-title" style="margin-bottom: 1rem;">保育士・幼児教育者採用に<br>お悩みのみなさまへ</h2>
+      <p style="max-width: 700px; margin: 0 auto 1.5rem;">
+        まずは情報収集だけでもお気軽に資料をダウンロードしてください。
+      </p>
+      
+      <div style="background: rgba(255,255,255,0.7); display: inline-block; padding: 1.5rem 3rem; border-radius: 16px; margin-bottom: 2.5rem;">
+        <h3 style="color: var(--color-cta); margin-bottom: 1rem;">🎁 資料ダウンロードで2大特典プレゼント</h3>
+        <ul style="text-align: left; font-weight: bold; color: #555;">
+          <li>・ワーカー受け入れマニュアル作成ツール</li>
+          <li>・導入初月のサービス利用料無料</li>
+        </ul>
+      </div>
+
+      <!-- フッター部分 -->
+      <footer class="footer-integrated">
+        <img src="./images/logo-vertical.png" alt="タスタス保育" style="max-height: 80px; margin: 0 auto 1rem;">
+        <div class="footer-nav">
+          <a href="https://www.careergift.co.jp/" target="_blank">運営会社情報</a>
+          <a href="./contact.html">お問い合わせ</a>
+          <a href="https://tastas.work/privacy" target="_blank">プライバシーポリシー</a>
+          <a href="#">利用規約</a>
+        </div>
+        <div class="footer-copy">
+          &copy; 2026 TASTAS Hoiku. All rights reserved.
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <!-- 3. 追従CTA -->
+  <div class="bottom-cta">
+    <div class="bottom-cta-inner">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScpvVZODzxf9Qszcivvn6iCBP1YsHKMT0gFNMmYYVNGml4XZA/viewform" class="btn btn-outline">
+        無料でアカウント開設
+      </a>
+      <a href="./contact.html" class="btn btn-cta-outline" style="border-width: 2px;">
+        <span class="cta-badge"><span class="cta-badge-num">2</span>大特典つき</span>
+        資料をダウンロード
+      </a>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const bottomCta = document.querySelector('.bottom-cta');
+      const heroSection = document.querySelector('.hero');
+      
+      if (bottomCta && heroSection) {
+        window.addEventListener('scroll', function() {
+          const heroHeight = heroSection.offsetHeight;
+          if (window.scrollY > heroHeight * 0.8) {
+            bottomCta.classList.add('is-visible');
+          } else {
+            bottomCta.classList.remove('is-visible');
+          }
+        });
+      }
+
+      // Add cute decorations to all sections
+      const sections = document.querySelectorAll('.section');
+      sections.forEach((section, index) => {
+        section.style.position = 'relative';
+        
+        const decorHtml = `
+          <div class="section-decorations" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; overflow: hidden;">
+            <div class="decor decor-dot" style="top: ${10 + (index % 3) * 5}%; left: ${-20 + (index % 2) * 10}px; width: 80px; height: 80px; background-color: #FFD166; opacity: 0.3; border-radius: 50%; animation-delay: ${index * 0.5}s;"></div>
+            <div class="decor decor-dot" style="top: ${80 - (index % 2) * 10}%; right: ${5 + (index % 3) * 2}%; width: 60px; height: 60px; background-color: #FF7F66; opacity: 0.2; border-radius: 50%; animation-delay: ${index * 0.7}s;"></div>
+            <svg class="decor decor-star" style="top: ${65 + (index % 2) * 10}%; left: ${5 + (index % 3) * 3}%; width: 45px; opacity: 0.5; animation-delay: ${index * 0.3}s;" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="50,10 61,39 92,39 67,58 76,87 50,70 24,87 33,58 8,39 39,39" fill="#FFD166"/>
+            </svg>
+            <svg class="decor decor-bird" style="top: ${20 + (index % 3) * 5}%; right: ${10 + (index % 2) * 5}%; width: 50px; opacity: 0.4; animation-delay: ${index * 0.8}s;" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10,25 Q25,10 50,25 Q75,10 90,25 Q75,20 50,35 Q25,20 10,25 Z" fill="#85C1A1"/>
+            </svg>
+          </div>
+        `;
+        section.insertAdjacentHTML('afterbegin', decorHtml);
+        
+        // Ensure section content is above decorations
+        const container = section.querySelector('.container');
+        if (container) {
+          container.style.position = 'relative';
+          container.style.zIndex = '1';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
